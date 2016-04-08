@@ -1,22 +1,76 @@
-html,body{
-	margin: 0;
-	padding: 0;
+* {
+    margin: 0;
+    padding: 0
 }
-.module-topbar.home-topbar {
-    position: relative;
-    z-index: 2;
-    box-shadow: none;
-    background-color: #FFF
+body {
+    width: 100%;
+    min-width: 320px;
+    -webkit-user-select: none;
+    -webkit-text-size-adjust: none;
+    background: #fff;
+    font-size: 15px;
+    line-height: 1.2;
+    font-family: arial,"Hiragino Sans GB",Simhei,sans-serif;
+    color: #3e474e;
+    word-break: break-all;
+    word-wrap: break-word;
+    padding-bottom: 110px;
+    padding-top: 43px
 }
-.module-topbar {
-    height: 44px;
-    color: #333;
+h1,h2,h3,h4,h5,h6 {
+    font-size: 1em;
+    font-weight: 400;
+    -webkit-text-size-adjust: none
+}
+header {
+    display: table;
+    width: 100%;
+    height: 2.93333em;
+    font-size: 15px;
+    background: #f04848;
     text-align: center;
+    line-height: 2.93333em;
+    color: #fff;
     position: fixed;
     top: 0;
-    width: 100%;
-    z-index: 19;
-    -wekbit-box-shadow: 0 1px 2px #cfcfcf;
+    left: 0;
+    z-index: 1300;
     box-shadow: 0 1px 2px #cfcfcf;
-    background: #f9f9f9
+}
+header h1 {
+    position: absolute;
+    left: 45px
+}
+header h1#logo {
+    left: 15px;
+}
+#logo {
+    float: left;
+    margin-top: 10px;
+    padding-left: 30px;
+    line-height: 25px;
+    font-family: microsoft yahei;
+    font-weight: 400
+}
+#icon_nav {
+    position: absolute;
+    top: 0;
+    right: 8px;
+    width: 45px;
+    height: 43px;
+    overflow: hidden
+}
+.icons,#logo,nav a i {
+    background-image: url(./img/icons.png);
+    background-repeat: no-repeat;
+    background-size: 56px;
+}
+#icon_nav em {
+    display: block;
+    height: 16px;
+    width: 16px;
+    margin: 14px auto 0;
+    background-size: 100%;
+    background-image: url(./img/foot.png);
+    background-position: 0 -68px
 }

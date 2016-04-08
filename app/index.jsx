@@ -1,10 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
+import './style.css';
+import App_nav from './app_nav.jsx';
 
-class Hello extends React.Component {
-  render() {
-    return <div className='module-topbar'>Hello {this.props.name}</div>
-  }
-}
-ReactDOM.render(<Hello name='651'/>,document.getElementById('example'));
+ReactDOM.render(<App_nav />,document.getElementById('header'));

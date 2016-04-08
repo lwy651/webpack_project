@@ -14,7 +14,7 @@ module.exports = {
 			{ test: /\.jsx?$/, exclude: /node_modules/, loader: "babel",query: {presets:['es2015','react']}},
 			// { test: /\.css?$/, loader: "style!css" }
 			{
-                test: /\.css$/,
+                test: /\.css?$/,
                 loader: ExtractTextPlugin.extract("style-loader", "css-loader")
             },
             // Optionally extract less files
@@ -22,10 +22,12 @@ module.exports = {
             {
                 test: /\.less$/,
                 loader: ExtractTextPlugin.extract("style-loader", "css-loader!less-loader")
-            }
+            },
+            { test: /\.png$/, loader: "url-loader?limit=100000" },
 		]
 	},
 	plugins: [
         new ExtractTextPlugin("[name].css")
     ]
 };
+console.log("ok");
