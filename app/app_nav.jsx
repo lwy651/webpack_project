@@ -17,10 +17,12 @@ class Icon_nav extends React.Component{
 class App_nav extends React.Component{
 	render(){
 		return (
-      		<div>
-        		<h1 id='logo'>小五侠</h1>
-				<Icon_nav/>
-      		</div>
+            <header>
+                <div>
+                    <h1 id='logo'>小五侠</h1>
+                    <Icon_nav/>
+                </div>
+            </header>
     	);
 	}
 }
