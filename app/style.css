@@ -74,3 +74,20 @@ header h1#logo {
     background-image: url(./img/foot.png);
     background-position: 0 -68px
 }
+.list_preferential {
+    padding: 0 1.875%;
+}
+
+.list_preferential li {
+    border-bottom: 1px solid #dedede;
+    padding: 6px 0;
+    overflow: hidden;
+}
+
+.list_preferential li .image_wrap {
+    float: left;
+    width: 84px;
+    height: 84px;
+    margin-right: 20px;
+    z-index: 1
+}
