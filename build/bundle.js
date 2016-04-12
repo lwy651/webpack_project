@@ -77,7 +77,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	_reactDom2.default.render(_react2.default.createElement(_app_nav2.default, null), document.getElementById('app'));
+	_reactDom2.default.render(_react2.default.createElement(_cell2.default, null), document.getElementById('app'));
 
 /***/ },
 /* 2 */
@@ -30011,10 +30011,10 @@
 	        key: "render",
 	        value: function render() {
 	            var rows = [];
-	            // var commentValue = this.props.data.forEach(function(product) {
-	            //     rows.push(<Cell_item key={product.name} text={product}/>);
-	            // });
-	            rows = [_react2.default.createElement(Cell_item, { text: { name: "651" } }), _react2.default.createElement(Cell_item, { text: { name: "651" } })];
+	            var commentValue = this.props.data.forEach(function (product) {
+	                rows.push(_react2.default.createElement(Cell_item, { key: product.name, text: product }));
+	            });
+	            // rows = [<Cell_item text={{name:"651"}}/>,<Cell_item text={{name:"651"}}/>]
 	            console.log(rows);
 	            return _react2.default.createElement(
 	                "ul",
@@ -30050,7 +30050,26 @@
 	    return List_preferential;
 	}(_react2.default.Component);
 
-	exports.default = List_preferential;
+	var Index_dom = function (_React$Component4) {
+	    _inherits(Index_dom, _React$Component4);
+
+	    function Index_dom() {
+	        _classCallCheck(this, Index_dom);
+
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(Index_dom).apply(this, arguments));
+	    }
+
+	    _createClass(Index_dom, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2.default.createElement(List_preferential, null), _react2.default.createElement(List_preferential, null);
+	        }
+	    }]);
+
+	    return Index_dom;
+	}(_react2.default.Component);
+
+	exports.default = Index_dom;
 
 /***/ }
 /******/ ]);

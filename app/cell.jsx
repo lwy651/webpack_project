@@ -12,10 +12,10 @@ class Cell_item extends React.Component{
 class Create_items extends React.Component{
     render(){
         var rows = [];
-        // var commentValue = this.props.data.forEach(function(product) {
-        //     rows.push(<Cell_item key={product.name} text={product}/>);
-        // });
-        rows = [<Cell_item text={{name:"651"}}/>,<Cell_item text={{name:"651"}}/>]
+        var commentValue = this.props.data.forEach(function(product) {
+            rows.push(<Cell_item key={product.name} text={product}/>);
+        });
+        // rows = [<Cell_item text={{name:"651"}}/>,<Cell_item text={{name:"651"}}/>]
         console.log(rows);
 		return (
             <ul className="list list_preferential" id="post_list_preferential">
@@ -33,4 +33,11 @@ class List_preferential extends React.Component{
     	);
 	}
 }
-export default List_preferential;
+class Index_dom extends React.Component{
+    render(){
+        return(
+            <List_preferential />
+        );
+    }
+}
+export default Index_dom;
